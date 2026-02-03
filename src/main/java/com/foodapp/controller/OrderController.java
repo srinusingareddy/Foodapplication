@@ -11,7 +11,10 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://foodaplicationfrontend.onrender.com"
+})
 @RestController
 @RequestMapping("/api/user/orders")
 public class OrderController {
